@@ -1,13 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body{
     background: url('bookshelf.jpg') no-repeat center center;
     background-color: black;
     color: white;
     height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .title{
@@ -15,12 +12,24 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.add{
+    border-radius: 50%;
+    border-color: transparent;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+
 }
 
 .container{
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 60px;
     padding-right: 200px;
@@ -32,8 +41,20 @@ body{
     background-color: gray;
     display: flex;
     flex-direction: column;
-    padding: 10px 10px;
+    padding: 12px 16px;
     gap: 8px;
     font-size: 20px;
+    border-radius: 10px;
     font-family: 'Poppins', sans-serif;
+}
+
+.remove{
+    width: 40%;
+    border-radius: 2px;
+    padding: 6px 20px;
+    font-size: 15px;
+    margin-top: auto;
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+    background-color: rgb(194, 47, 47);
 }
